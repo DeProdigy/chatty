@@ -68,3 +68,23 @@ ChattyApp::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
+#== Route Map
+# Generated on 23 Nov 2013 18:09
+#
+#      chatrooms_create GET    /chatrooms/create(.:format)                         chatrooms#create
+#        chatrooms_show GET    /chatrooms/show(.:format)                           chatrooms#show
+#                  root        /                                                   welcome#index
+#     chatroom_messages GET    /chatrooms/:chatroom_id/messages(.:format)          messages#index
+#                       POST   /chatrooms/:chatroom_id/messages(.:format)          messages#create
+#  new_chatroom_message GET    /chatrooms/:chatroom_id/messages/new(.:format)      messages#new
+# edit_chatroom_message GET    /chatrooms/:chatroom_id/messages/:id/edit(.:format) messages#edit
+#      chatroom_message GET    /chatrooms/:chatroom_id/messages/:id(.:format)      messages#show
+#                       PUT    /chatrooms/:chatroom_id/messages/:id(.:format)      messages#update
+#                       DELETE /chatrooms/:chatroom_id/messages/:id(.:format)      messages#destroy
+#             chatrooms GET    /chatrooms(.:format)                                chatrooms#index
+#                       POST   /chatrooms(.:format)                                chatrooms#create
+#          new_chatroom GET    /chatrooms/new(.:format)                            chatrooms#new
+#         edit_chatroom GET    /chatrooms/:id/edit(.:format)                       chatrooms#edit
+#              chatroom GET    /chatrooms/:id(.:format)                            chatrooms#show
+#                       PUT    /chatrooms/:id(.:format)                            chatrooms#update
+#                       DELETE /chatrooms/:id(.:format)                            chatrooms#destroy
