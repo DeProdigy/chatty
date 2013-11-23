@@ -1,5 +1,5 @@
 <h1>Welcome to chatty</h1>
 
-<%= form_for @chatroom, :url => '/chatrooms' do |f| %>
-  <%= f.submit %>
+<%= form_for @chatroom, :as => :chatroom, :url => '/chatrooms', :method => :post do |f| %>
+  <%= f.submit 'create a new chatroom' %>
 <% end %>
