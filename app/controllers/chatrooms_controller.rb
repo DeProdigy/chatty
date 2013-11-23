@@ -9,6 +9,6 @@ class ChatroomsController < ApplicationController
   end
 
   def show
-
+    @messages = Message.where chatroom_id: params["id"].to_i
   end
 end
