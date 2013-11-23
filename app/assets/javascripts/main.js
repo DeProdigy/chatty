@@ -3,7 +3,11 @@ $(document).ready(function(){
 });
 
 function addEventListeners() {
-  // $("#create-lamb").on("click", function() {
-  //   createLamb();
-  // });
+  $("#submit-message").on("click", function() {
+    createMessage();
+  });
+}
+
+function createMessage() {
+  alert('yo');
 }
