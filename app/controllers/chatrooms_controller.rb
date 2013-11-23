@@ -5,7 +5,7 @@ class ChatroomsController < ApplicationController
   def create
     @chatroom = Chatroom.create
 
-    redirect_to chatrooms_url(@chatroom)
+    redirect_to @chatroom
   end
 
   def show
