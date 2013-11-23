@@ -1,4 +1,16 @@
 ChattyApp::Application.routes.draw do
+  get "chatrooms/index"
+
+  get "chatrooms/create"
+
+  get "chatrooms/show"
+
+  root to: 'welcome#index'
+
+  resources :chatrooms do
+    resources :messages
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
