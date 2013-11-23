@@ -4,7 +4,9 @@ class MessagesController < ApplicationController
   end
 
   def create
-    #@message = Message.new
+    binding.pry
+    @message = Message.new
+
   end
 
 end
