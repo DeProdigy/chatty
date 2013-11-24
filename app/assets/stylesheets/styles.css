@@ -1,0 +1,43 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #FF924E;
+}
+
+h1 {
+  text-align: center;
+  color: #3A393B;
+}
+
+#chatroom-box {
+  color: #3A393B;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+
+#message-content {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+#submit-message {
+  padding: 5px;
+  margin-bottom: 2%;
+}
+
+.names {
+  margin-bottom: -2%;
+  margin-top: 5%;
+}
+
+.messages {
+  font-size: 1.5em;
+}
+
+.timestamp {
+  font-size: 0.5em;
+  margin-top: -2%;
+}
