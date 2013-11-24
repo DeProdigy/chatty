@@ -3,7 +3,8 @@ $(document).ready(function(){
 });
 
 function addEventListeners() {
-  $("#submit-message").on("click", function() {
+  $("#new-message-form").on("submit", function(event) {
+    event.preventDefault();
     createMessage();
   });
 }
