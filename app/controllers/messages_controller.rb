@@ -5,6 +5,8 @@ class MessagesController < ApplicationController
   end
 
   def create
+
+
     message = Message.new
     message.content = params[:content]
     message.chatroom_id = params[:chatroom_id]
