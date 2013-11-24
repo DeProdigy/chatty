@@ -9,5 +9,14 @@ function addEventListeners() {
 }
 
 function createMessage() {
-  alert('yo');
+  var content = $("#message-content").val();
+  $.ajax({
+    url: '/messages',
+    type: 'post',
+    data: {param1: 'value1'}
+  })
+  .done(function(data) {
+    console.log(data);
+  });
+
 }
