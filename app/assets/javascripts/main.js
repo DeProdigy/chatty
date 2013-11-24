@@ -16,5 +16,29 @@ function createMessage() {
     url: document.URL + '/messages',
     type: 'post',
     data: {content: content}
+  })
+  .done(function() {
+    refreshMessages();
   });
 }
+
+function refreshMessages() {
+  //clear the currently displayed messages
+  var $messagesDisplay = $("#messages-display");
+  $messagesDisplay.empty();
+  //get all the messages
+  $.ajax({
+    url: document.URL + '/messages',
+    type: 'get'
+  })
+  .done(function(data) {
+    //display the messages in the same div
+    // console.log(data);
+    //data[i].content
+    for (var i = 0; i < data.length; i++ ) {
+      $messagesDisplay.append('<p>' + data[i].content + '</p>');
+    }
+  });
+}
+
+
