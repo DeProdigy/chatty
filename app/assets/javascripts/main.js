@@ -33,15 +33,22 @@ function createMessage() {
 }
 
 function refreshMessages() {
-  //clear the currently displayed messages
+
   var $messagesDisplay = $("#messages-display");
-  //$messagesDisplay.empty();
+
   //get all the messages
   $.ajax({
     url: document.URL + '/messages',
     type: 'get'
   })
   .done(function(data) {
+    //get all the messages that are on the page
+    //var $currentMessages = $('p');
+
+    //clear the currently displayed messages
+    $messagesDisplay.empty();
+
+    //display all the messages
     for (var i = 0; i < data.length; i++ ) {
       $messagesDisplay.append('<p id="' + data[i].id + '" >' + data[i].content + '</p>');
     }

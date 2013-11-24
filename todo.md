@@ -6,8 +6,6 @@
 
 ~~constantly refresh messages~~
 
-check if the message is on the page already, if yes, don't add it to the screen
-
 display messages in descending order
 
 time stamps
