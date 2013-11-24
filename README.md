@@ -1,5 +1,4 @@
 <h2>Chatty</h2>
-________
 
 <h4>anonymous chatrooms</h4>
 ________
