@@ -42,15 +42,13 @@ function refreshMessages() {
     type: 'get'
   })
   .done(function(data) {
-    //get all the messages that are on the page
-    //var $currentMessages = $('p');
-
     //clear the currently displayed messages
     $messagesDisplay.empty();
-
+    //sort in descending order
+    var sortedData = data.reverse();
     //display all the messages
-    for (var i = 0; i < data.length; i++ ) {
-      $messagesDisplay.append('<p id="' + data[i].id + '" >' + data[i].content + '</p>');
+    for (var i = 0; i < sortedData.length; i++ ) {
+      $messagesDisplay.append('<p id="' + sortedData[i].id + '" >' + sortedData[i].content + '</p>');
     }
   });
 }

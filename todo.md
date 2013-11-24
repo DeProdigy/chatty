@@ -6,7 +6,7 @@
 
 ~~constantly refresh messages~~
 
-display messages in descending order
+~~display messages in descending order~~
 
 time stamps
 
