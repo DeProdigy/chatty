@@ -8,7 +8,7 @@
 
 ~~display messages in descending order~~
 
-time stamps
+~~time stamps~~
 
 list of funny names
 

@@ -48,7 +48,13 @@ function refreshMessages() {
     var sortedData = data.reverse();
     //display all the messages
     for (var i = 0; i < sortedData.length; i++ ) {
-      $messagesDisplay.append('<p id="' + sortedData[i].id + '" >' + sortedData[i].content + '</p>');
+      //display the date/timestamp
+      var timestamp = data[0].created_at
+      var year = timestamp.substring(0,10);
+      var time = timestamp.substring(11, 19);
+      //append to the div
+      $messagesDisplay.append('<p class="messages" id="' + sortedData[i].id + '" >' + sortedData[i].content + '</p>');
+      $messagesDisplay.append('<p class="timestamp">' + time + ' ' + year +  '</p>');
     }
   });
 }
