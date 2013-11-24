@@ -1,6 +1,8 @@
 $(document).ready(function(){
   addEventListeners();
-  refreshMessages();
+  setInterval(function(){
+    refreshMessages();
+  }, 1000);
 });
 
 function addEventListeners() {
