@@ -52,9 +52,16 @@ function refreshMessages() {
       var timestamp = data[0].created_at
       var year = timestamp.substring(0,10);
       var time = timestamp.substring(11, 19);
-      //append to the div
-      $messagesDisplay.append('<p class="messages" id="' + sortedData[i].id + '" >' + sortedData[i].content + '</p>');
-      $messagesDisplay.append('<p class="timestamp">' + time + ' ' + year +  '</p>');
+      //div to wrap the entire message in
+      var $messageWrapper = $("<div>");
+      //name field
+      $messageWrapper.append('<p class="names">' + sortedData[i].name + '</p>');
+      //message field
+      $messageWrapper.append('<p class="messages" id="' + sortedData[i].id + '" >' + sortedData[i].content + '</p>');
+      //timestamp field
+      $messageWrapper.append('<p class="timestamp">' + time + ' ' + year +  '</p>');
+      //append the wrapper to the message display
+      $messagesDisplay.append($messageWrapper);
     }
   });
 }
