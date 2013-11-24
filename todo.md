@@ -16,7 +16,7 @@
 
 ~~style~~
 
-add explanation of random names
+~~add instructions~~
 
 link support
 
