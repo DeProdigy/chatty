@@ -13,9 +13,6 @@ body {
   top: 0; left: 0; bottom: 0; right: 0;
 }
 
-.welcome-message {
-}
-
 .create-chatroom-form {
   margin-top: 3.7%;
   text-align: center;
@@ -36,6 +33,14 @@ body {
 }
 
 /* CHATROOMS */
+
+.instructions {
+  text-align: center;
+  color: #3A393B;
+  font-size: 1em;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
 a {
   text-decoration: none;
 }
