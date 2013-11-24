@@ -16,6 +16,8 @@
 
 ~~style~~
 
+add explanation of random names
+
 link support
 
 if the date is today - show today
