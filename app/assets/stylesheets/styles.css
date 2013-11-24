@@ -4,11 +4,41 @@ body {
 }
 
 /* MAIN PAGE */
+.welcome-box{
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
 
+.welcome-message {
+}
 
+.create-chatroom-form {
+  margin-top: 3.7%;
+  text-align: center;
+}
 
+.create-chatroom-button {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif !important;
+  background-color: #3A393B;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+}
 
 /* CHATROOMS */
+a {
+  text-decoration: none;
+}
 
 h1 {
   text-align: center;
