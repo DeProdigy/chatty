@@ -3,9 +3,17 @@ body {
   background-color: #FF924E;
 }
 
+/* MAIN PAGE */
+
+
+
+
+/* CHATROOMS */
+
 h1 {
   text-align: center;
   color: #3A393B;
+  font-size: 2em;
 }
 
 #chatroom-box {
@@ -29,15 +37,19 @@ h1 {
 }
 
 .names {
-  margin-bottom: -2%;
+  margin-bottom: -4%;
   margin-top: 5%;
+  opacity: 0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
 }
 
 .messages {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .timestamp {
   font-size: 0.5em;
   margin-top: -2%;
+  opacity:0.3;
+  filter: alpha(opacity=30); /* For IE8 and earlier */
 }
