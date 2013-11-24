@@ -7,6 +7,8 @@ gem 'rails', '3.2.14'
 
 gem 'pg'
 
+gem "rails_autolink", "~> 1.1.5"
+
 #Gemfile
 group :development, :test do
   gem 'pry-rails'           # Causes rails console to open pry

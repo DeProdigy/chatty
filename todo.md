@@ -14,4 +14,8 @@
 
 ~~display a funny name~~
 
-style
+~~style~~
+
+link support
+
+if the date is today - show today
