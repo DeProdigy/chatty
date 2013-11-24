@@ -9,14 +9,12 @@ function addEventListeners() {
 }
 
 function createMessage() {
+  //get chatroom id
+  //get the message's content
   var content = $("#message-content").val();
   $.ajax({
-    url: '/messages',
+    url: document.URL + '/messages',
     type: 'post',
-    data: {param1: 'value1'}
-  })
-  .done(function(data) {
-    console.log(data);
+    data: {content: content}
   });
-
 }
