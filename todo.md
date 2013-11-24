@@ -12,6 +12,6 @@
 
 ~~list of funny names~~
 
-display a funny name
+~~display a funny name~~
 
 style
