@@ -10,6 +10,8 @@
 
 ~~time stamps~~
 
-list of funny names
+~~list of funny names~~
+
+display a funny name
 
 style
