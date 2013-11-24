@@ -5,4 +5,4 @@ ________
 
 in big classrooms, some people get lost but are too afraid to speak up.
 
-chatty takes away concept of fear by letting users speak up anonymously
+chatty takes away the concept of fear by letting users speak up anonymously
