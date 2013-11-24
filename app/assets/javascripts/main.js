@@ -11,13 +11,15 @@ function addEventListeners() {
 function createMessage() {
   //get chatroom id
   //get the message's content
-  var content = $("#message-content").val();
+  var $messageContent = $("#message-content");
+  var content = $messageContent.val();
   $.ajax({
     url: document.URL + '/messages',
     type: 'post',
     data: {content: content}
   })
   .done(function() {
+    $messageContent.val('');
     refreshMessages();
   });
 }
