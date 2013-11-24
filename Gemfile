@@ -7,6 +7,8 @@ gem 'rails', '3.2.14'
 
 gem 'pg'
 
+gem 'underscore-rails'
+
 #Gemfile
 group :development, :test do
   gem 'pry-rails'           # Causes rails console to open pry

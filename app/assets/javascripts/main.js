@@ -1,5 +1,8 @@
 $(document).ready(function(){
   addEventListeners();
+  //initial load
+  refreshMessages();
+  //refresh every 1 second
   setInterval(function(){
     refreshMessages();
   }, 1000);
@@ -7,6 +10,7 @@ $(document).ready(function(){
 
 function addEventListeners() {
   $("#new-message-form").on("submit", function(event) {
+    //don't submit the form, just extract the needed info
     event.preventDefault();
     createMessage();
   });
@@ -23,26 +27,23 @@ function createMessage() {
     data: {content: content}
   })
   .done(function() {
+    //clear the input box
     $messageContent.val('');
-    refreshMessages();
   });
 }
 
 function refreshMessages() {
   //clear the currently displayed messages
   var $messagesDisplay = $("#messages-display");
-  $messagesDisplay.empty();
+  //$messagesDisplay.empty();
   //get all the messages
   $.ajax({
     url: document.URL + '/messages',
     type: 'get'
   })
   .done(function(data) {
-    //display the messages in the same div
-    // console.log(data);
-    //data[i].content
     for (var i = 0; i < data.length; i++ ) {
-      $messagesDisplay.append('<p>' + data[i].content + '</p>');
+      $messagesDisplay.append('<p id="' + data[i].id + '" >' + data[i].content + '</p>');
     }
   });
 }

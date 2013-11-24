@@ -144,6 +144,7 @@ GEM
     uglifier (2.3.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    underscore-rails (1.5.2)
 
 PLATFORMS
   ruby
@@ -165,3 +166,4 @@ DEPENDENCIES
   rails-erd
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
+  underscore-rails
