@@ -2,7 +2,9 @@
 
 ~~make the submit work as a click and a submit~~
 
-get rid of erb rendering out the initial load, use JS methods
+~~get rid of erb rendering out the initial load, use JS methods~~
+
+constantly refresh messages
 
 display messages in descending order
 

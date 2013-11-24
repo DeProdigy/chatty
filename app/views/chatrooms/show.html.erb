@@ -6,10 +6,7 @@
     <input type="text" name="content" placeholder="your message..." id="message-content">
     <input type="submit" value="send" id="submit-message">
   </form>
-  <div id="messages-display">
-    <% @messages.each do |message| %>
-      <p><%= message.content %></p>
-    <% end %>
-  </div>
+
+  <div id="messages-display"></div>
 
 </div>

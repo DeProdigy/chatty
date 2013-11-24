@@ -1,5 +1,6 @@
 $(document).ready(function(){
   addEventListeners();
+  refreshMessages();
 });
 
 function addEventListeners() {
