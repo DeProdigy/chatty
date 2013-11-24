@@ -1,7 +1,14 @@
-<h1>Welcome to the chatroom </h1>
+<h1>Welcome to your chatroom </h1>
 
 
 <div id="chatroom-box">
   <input type="text" name="content" placeholder="your message..." id="message-content">
   <input type="submit" value="send" id="submit-message">
+
+  <div id="messages-display">
+    <% @messages.each do |message| %>
+      <p><%= message.content %></p>
+    <% end %>
+  </div>
+
 </div>
