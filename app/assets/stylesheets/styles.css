@@ -5,12 +5,18 @@ body {
 
 /* MAIN PAGE */
 .welcome-box{
-  width: 50%;
-  height: 50%;
+  text-align: center;
+  width: 60%;
+  height: 80%;
   overflow: auto;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#home-icon {
+  height: 300px;
+  width: 290px;
 }
 
 .create-chatroom-form {
@@ -33,6 +39,12 @@ body {
 }
 
 /* CHATROOMS */
+
+#main-icon {
+  height: 10%;
+  width: 10%;
+  display: inline-block;
+}
 
 .instructions {
   text-align: center;

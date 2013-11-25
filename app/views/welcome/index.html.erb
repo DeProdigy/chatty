@@ -1,4 +1,6 @@
 <div class="welcome-box">
+  <%= image_tag("chatty2x.png", :alt => "rss feed", :id => "home-icon") %>
+
   <h1 class='welcome-message'>welcome to chatty</h1>
   <%= form_for @chatroom, :as => :chatroom, :url => '/chatrooms', :method => :post, :html => {:class => "create-chatroom-form"} do |f| %>
     <%= f.submit 'create a new chatroom', :class => 'create-chatroom-button' %>
