@@ -18,6 +18,8 @@
 
 ~~add instructions~~
 
+make a button that copies the url
+
 link support
 
 if the date is today - show today
