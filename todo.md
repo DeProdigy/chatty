@@ -18,8 +18,14 @@
 
 ~~add instructions~~
 
-make a button that copies the url
+if the date is today - show today
+
+send out the same ajax request instead of creating new ones
+
+make a button that copies the url for easy sharing
 
 link support
 
-if the date is today - show today
+support emoji
+
+
