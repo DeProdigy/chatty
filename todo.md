@@ -20,12 +20,14 @@
 
 if the date is today - show today
 
-send out the same ajax request instead of creating new ones
+move the funny name into module in the lib folder
 
-make a button that copies the url for easy sharing
+make a button that copies the url for easy sharing -- save the current URL to clipboard -- clippy?
 
 link support
 
-support emoji
+support emoji :)
+
+websocket
 
 
