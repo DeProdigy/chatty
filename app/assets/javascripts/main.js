@@ -6,6 +6,7 @@ $(document).ready(function(){
   setInterval(function(){
     refreshMessages();
   }, 1000);
+  mixpanel.track("Main Page Visit");
 });
 
 function addEventListeners() {
